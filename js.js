@@ -38,7 +38,16 @@ function donation(donationInput, donationFund){
             document.getElementById(donationFund).innerText = noakhaliTotal;
             const newBalance = accountBalanceInt - parseInt(noakhaliInput);
             document.getElementById("account-balance").innerText = newBalance;
-            my_modal_1.showModal()
+            my_modal.showModal()
+            const historyContainer = document.getElementById("history-container");
+            const newDiv = document.createElement("div")
+            newDiv.classList.add("border")
+            newDiv.innerHTML = "<h2> 96500 Taka is Donated for famine-2024 at Feni, Bangladesh </h2> "
+            historyContainer.appendChild(newDiv)
+
+
+            console.log(newDiv);
+            
         }
         else {
             alert("invalid number")
