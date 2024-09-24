@@ -43,11 +43,8 @@
                         <input type="radio" name="my-accordion-2" checked="checked" />
                         <div class="collapse-title text-2xl font-medium">What is the Document Object Model (DOM)?</div>
                         <div class="collapse-content">
-                            <p>The Document Object Model (DOM) is the data representation of the objects that make up
-                                the structure and content of a
-                                document on the Web. This guide will introduce the DOM, explain how the DOM represents
-                                an HTML document in memory, and
-                                demonstrate how to use the API to create web content and applications.</p>
+                            <p>
+                                The Document Object Model (DOM) is a programming interface that represents the structure of an HTML or XML document as a tree of objects. It allows developers to access, manipulate, and modify content and structure dynamically using languages like JavaScript, enabling interactive web applications and enhanced user experiences.</p>
                         </div>
                     </div>
                     <div class="collapse collapse-arrow bg-base-200">
@@ -55,12 +52,7 @@
                         <div class="collapse-title text-2xl font-medium">How do you select an element from the DOM?
                         </div>
                         <div class="collapse-content">
-                            <p>The Selectors API offers methods that allow you to quickly and easily retrieve Element
-                                nodes from the DOM by matching
-                                them against a set of selectors. This is a much faster approach compared to previous
-                                techniques, where it was necessary
-                                to, for example, use a loop in JavaScript code to locate the specific items you needed
-                                to find.</p>
+                            <p>To select an element from the DOM, use methods like getElementById(), getElementsByClassName(), or querySelector(). For example, document.getElementById('myElement') retrieves an element by its ID, while document.querySelector('.myClass') selects the first element matching the specified CSS selector.</p>
                         </div>
                     </div>
                     <div class="collapse collapse-arrow bg-base-200">
@@ -68,11 +60,11 @@
                         <div class="collapse-title text-xl font-medium">What is event delegation in the context of the
                             DOM, and why is it useful?</div>
                         <div class="collapse-content">
-                            <p>Event delegation is the process of utilizing event propagation (bubbling) to manage
-                                events at a higher level in the DOM
-                                compared to the element where the event initially occurred. This approach enables us to
-                                attach a single event listener
-                                for elements that currently exist or may be added in the future.</p>
+                            <p>Event delegation is a technique in the DOM where a single event listener is added to a parent element instead of multiple listeners on child elements. This approach improves performance and simplifies code, as events bubble up to the parent, allowing for easier management of dynamic elements and reduced memory usage.
+
+
+
+                            </p>
                         </div>
                     </div>
                     <div class="collapse collapse-arrow bg-base-200">
@@ -80,11 +72,7 @@
                         <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes
                             and styles using the DOM?</div>
                         <div class="collapse-content">
-                            <p>The classList object only provide methods to change the class of an element. If you want
-                                to change other attributes like
-                                id , href , or src , you can use the setAttribute() method. The setAttribute() method
-                                accepts two arguments: The name of
-                                the attribute to set.</p>
+                            <p>You can manipulate an element's attributes using setAttribute() or by directly accessing properties, like element.id. To change styles, use the style property, e.g., element.style.color = 'red'. This allows for dynamic updates of attributes and CSS properties directly in JavaScript</p>
                         </div>
 
                     </div>
