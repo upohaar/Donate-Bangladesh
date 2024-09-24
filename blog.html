@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donote Bangladesh</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="sticky top-0  py-2 bg-[#fafafaef]">
+        <nav class="container mx-auto ">
+            <div class="navbar">
+                <div class="navbar-start">
+                    <button class="bg-lime-300 rounded-md px-4 py-2 btn">Blog</button>
+                </div>
+                <div class="navbar-center">
+                    <img class="size-8" src="assets/logo.png" alt="">
+                    <a class="btn btn-ghost text-xl">Donate Bangladesh</a>
+                </div>
+                <div class="navbar-end gap-4">
+                    <img src="assets/coin.png" alt="">
+                    <span id="account-balance">50000000</span>
+                </div>
+            </div>
+        </nav>
+        <div class="flex justify-center items-center text-center gap-4 my-10">
+            <a href="index.html"><button id="donation-btn" class=" bg-lime-300  rounded-md px-4 py-2 btn">Donation</button> </a>
+            <button id="History-btn" class="rounded-md px-4 py-2 btn">History</button>
+           
+        </div>
+    </header>
+    <main class="flex flex-col gap-8">
+      
+        <!-- blog page -->
+        <section id="blog-section" class="container mx-auto  ">
+            <div class="w-9/12 mx-auto py-8">
+                <div class="flex flex-col rounded-xl border p-8 gap-8 ">
+
+                    <div class="collapse collapse-arrow bg-base-200">
+                        <input type="radio" name="my-accordion-2" checked="checked" />
+                        <div class="collapse-title text-2xl font-medium">What is the Document Object Model (DOM)?</div>
+                        <div class="collapse-content">
+                            <p>The Document Object Model (DOM) is the data representation of the objects that make up
+                                the structure and content of a
+                                document on the Web. This guide will introduce the DOM, explain how the DOM represents
+                                an HTML document in memory, and
+                                demonstrate how to use the API to create web content and applications.</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow bg-base-200">
+                        <input type="radio" name="my-accordion-2" />
+                        <div class="collapse-title text-2xl font-medium">How do you select an element from the DOM?
+                        </div>
+                        <div class="collapse-content">
+                            <p>The Selectors API offers methods that allow you to quickly and easily retrieve Element
+                                nodes from the DOM by matching
+                                them against a set of selectors. This is a much faster approach compared to previous
+                                techniques, where it was necessary
+                                to, for example, use a loop in JavaScript code to locate the specific items you needed
+                                to find.</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow bg-base-200">
+                        <input type="radio" name="my-accordion-2" />
+                        <div class="collapse-title text-xl font-medium">What is event delegation in the context of the
+                            DOM, and why is it useful?</div>
+                        <div class="collapse-content">
+                            <p>Event delegation is the process of utilizing event propagation (bubbling) to manage
+                                events at a higher level in the DOM
+                                compared to the element where the event initially occurred. This approach enables us to
+                                attach a single event listener
+                                for elements that currently exist or may be added in the future.</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow bg-base-200">
+                        <input type="radio" name="my-accordion-2" />
+                        <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes
+                            and styles using the DOM?</div>
+                        <div class="collapse-content">
+                            <p>The classList object only provide methods to change the class of an element. If you want
+                                to change other attributes like
+                                id , href , or src , you can use the setAttribute() method. The setAttribute() method
+                                accepts two arguments: The name of
+                                the attribute to set.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <script src="js.js">
+
+    </script>
+</body>
+
+</html>
