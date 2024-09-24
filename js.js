@@ -25,25 +25,31 @@ document.getElementById("donation-btn").addEventListener("click", function (even
 })
 
 
-function donation(donationInput, donationFund){
-    const noakhaliInput = document.getElementById(donationInput).value;
-    const noakhaliFund = document.getElementById(donationFund).innerText;
+function donation(donationInput, donationFund, title){
+    const date = new Date ();
+    const coin = document.getElementById("coin")
+    const input = document.getElementById(donationInput).value;
+    const inputInt = parseInt(input)
+    const fund = document.getElementById(donationFund).innerText;
     const accountBalance = document.getElementById("account-balance").innerText;
     const accountBalanceInt = parseInt(accountBalance);
-    const noakhaliInputInt = parseInt(noakhaliInput)
-
-    if (noakhaliInputInt <= accountBalanceInt) {
-        if (noakhaliInputInt > 0) {
-            const noakhaliTotal = parseInt(noakhaliFund) + parseInt(noakhaliInput);
-            document.getElementById(donationFund).innerText = noakhaliTotal;
-            const newBalance = accountBalanceInt - parseInt(noakhaliInput);
+    const reasonTitle = document.getElementById(title).innerText;
+    if (inputInt <= accountBalanceInt) {
+        if (inputInt > 0) {
+            const fundTotal = parseInt(fund) + parseInt(input);
+            document.getElementById(donationFund).innerText = fundTotal;
+            const newBalance = accountBalanceInt - parseInt(input);
             document.getElementById("account-balance").innerText = newBalance;
             my_modal.showModal()
             const historyContainer = document.getElementById("history-container");
             const newDiv = document.createElement("div")
-            newDiv.classList.add("border")
-            newDiv.innerHTML = "<h2> 96500 Taka is Donated for famine-2024 at Feni, Bangladesh </h2> "
+            newDiv.classList.add("border", "p-8" ,"rounded-xl")
+            newDiv.innerHTML = `
+            <h2 class="text-2xl font-bold" >${inputInt} taka for ${reasonTitle} </h2>
+            <h2 class="text-xl mt-3"> ${date} </h2>
+            `
             historyContainer.appendChild(newDiv)
+            coin.innerText = inputInt ;
 
 
             console.log(newDiv);
@@ -62,15 +68,15 @@ function donation(donationInput, donationFund){
 
 function noakhaliDonation() {
 
-    donation("noakhali-input","noakhali-fund")
+    donation("noakhali-input","noakhali-fund", "noakhali-title")
     
     
 }
 function feniDonation(){
-    donation("feni-input", "feni-fund")
+    donation("feni-input", "feni-fund", "feni-title")
 }
 function quotaDonation(){
-    donation("quota-input", "quota-fund")
+    donation("quota-input", "quota-fund", "quota-title")
 }
 
 

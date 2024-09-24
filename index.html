@@ -46,7 +46,7 @@
                                 BDT
                             </button>
                         </div>
-                        <h2 class="font-bold text-xl">Donate for Flood at Noakhali, Bangladesh</h2>
+                        <h2 id="noakhali-title" class="font-bold text-xl">Donate for Flood at Noakhali, Bangladesh</h2>
                         <p class="flex-grow">The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
                         <div  > 
                             <input id="noakhali-input" type="number" placeholder="Write Donation Amount" class="flex input input-bordered w-full" />
@@ -66,7 +66,7 @@
                                 BDT                                                  
                             </button>
                         </div>
-                        <h2 class="font-bold text-xl">Donate for Flood Relief in Feni,Bangladesh</h2>
+                        <h2 id="feni-title" class="font-bold text-xl">Donate for Flood Relief in Feni,Bangladesh</h2>
                         <p class="flex-grow"> The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
                         <div>
                             <input type="number" placeholder="Write Donate Amount" id="feni-input" class="input input-bordered w-full " />
@@ -87,7 +87,7 @@
                                 BDT
                             </button>
                         </div>
-                        <h2 class="font-bold text-xl">Aid for Injured in the Quota Movement</h2>
+                        <h2 id="quota-title" class="font-bold text-xl">Aid for Injured in the Quota Movement</h2>
                         <p class="flex-grow">The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
                         <div  > 
                             <input id="quota-input" type="number" placeholder="Write Donation Amount" class="flex input input-bordered w-full" />
@@ -100,7 +100,7 @@
         <!-- history  -->
         <section id="history" class="hidden ">
             <div class="container mx-auto w-9/12">
-                <div id="history-container" class="border rounded-lg p-8 ">
+                <div id="history-container" class=" rounded-lg my-8 flex flex-col gap-8  ">
                     
                     
                 </div>
@@ -111,7 +111,10 @@
               <dialog id="my_modal" class="modal">
                   <div class="modal-box flex flex-col justify-center items-center">
                       <h2 class="text-3xl mb-4 font-bold ">Congrates!</h2>
-                      <img src="assets/coin.png" alt="">
+                      <div class="flex gap-3">
+                        <img src="assets/coin.png" alt="">
+                        <span class="font-bold text-2xl" id="coin"></span>
+                      </div>
                       <p class="py-4">You Have Donated For Humankind</p>
                       <h3 class="text-xl font-bold">Successfully</h3>
                       <div class="modal-action">
